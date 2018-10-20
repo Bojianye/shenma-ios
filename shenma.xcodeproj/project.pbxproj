@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9575DFF5AEFD6A3C2B99B6D2 /* Pods_shenma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B53D2C0AC1CEEB71A36384 /* Pods_shenma.framework */; };
 		D122268D217B00AA000DEFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D122268C217B00AA000DEFEB /* AppDelegate.swift */; };
-		D122268F217B00AA000DEFEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D122268E217B00AA000DEFEB /* ViewController.swift */; };
 		D1222692217B00AA000DEFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1222690217B00AA000DEFEB /* Main.storyboard */; };
 		D1222694217B00AB000DEFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1222693217B00AB000DEFEB /* Assets.xcassets */; };
 		D1222697217B00AB000DEFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1222695217B00AB000DEFEB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8FC12816CB2D4396386EB0 /* Pods-shenma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shenma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shenma/Pods-shenma.debug.xcconfig"; sourceTree = "<group>"; };
+		915B506CF8328FA2A1BC5BBC /* Pods-shenma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shenma.release.xcconfig"; path = "Pods/Target Support Files/Pods-shenma/Pods-shenma.release.xcconfig"; sourceTree = "<group>"; };
 		D1222689217B00AA000DEFEB /* shenma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shenma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D122268C217B00AA000DEFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D122268E217B00AA000DEFEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1222691217B00AA000DEFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1222693217B00AB000DEFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1222696217B00AB000DEFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1222698217B00AB000DEFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B53D2C0AC1CEEB71A36384 /* Pods_shenma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shenma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9575DFF5AEFD6A3C2B99B6D2 /* Pods_shenma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EA27E83D841AF6DAFE2080C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4B53D2C0AC1CEEB71A36384 /* Pods_shenma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0E72F9D2C584CD268B0A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E8FC12816CB2D4396386EB0 /* Pods-shenma.debug.xcconfig */,
+				915B506CF8328FA2A1BC5BBC /* Pods-shenma.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D1222680217B00A9000DEFEB = {
 			isa = PBXGroup;
 			children = (
 				D122268B217B00AA000DEFEB /* shenma */,
 				D122268A217B00AA000DEFEB /* Products */,
+				CA0E72F9D2C584CD268B0A87 /* Pods */,
+				6EA27E83D841AF6DAFE2080C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,93 @@
 		D122268B217B00AA000DEFEB /* shenma */ = {
 			isa = PBXGroup;
 			children = (
-				D122268C217B00AA000DEFEB /* AppDelegate.swift */,
-				D122268E217B00AA000DEFEB /* ViewController.swift */,
-				D1222690217B00AA000DEFEB /* Main.storyboard */,
+				D122269E217B3A2A000DEFEB /* src */,
+				D12226A7217B3C1F000DEFEB /* Other */,
 				D1222693217B00AB000DEFEB /* Assets.xcassets */,
+			);
+			path = shenma;
+			sourceTree = "<group>";
+		};
+		D122269E217B3A2A000DEFEB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D122269F217B3A40000DEFEB /* Homepage */,
+				D12226A0217B3A55000DEFEB /* Message */,
+				D12226A1217B3A8D000DEFEB /* Publish */,
+				D12226A2217B3A9A000DEFEB /* Evaluation */,
+				D12226A3217B3ABB000DEFEB /* Me */,
+				D12226A4217B3AC2000DEFEB /* Base */,
+				D12226A5217B3AEB000DEFEB /* Utils */,
+				D12226A6217B3BA6000DEFEB /* Welcome */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D122269F217B3A40000DEFEB /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		D12226A0217B3A55000DEFEB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D12226A1217B3A8D000DEFEB /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		D12226A2217B3A9A000DEFEB /* Evaluation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Evaluation;
+			sourceTree = "<group>";
+		};
+		D12226A3217B3ABB000DEFEB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		D12226A4217B3AC2000DEFEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D12226A5217B3AEB000DEFEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D12226A6217B3BA6000DEFEB /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		D12226A7217B3C1F000DEFEB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D122268C217B00AA000DEFEB /* AppDelegate.swift */,
+				D1222690217B00AA000DEFEB /* Main.storyboard */,
 				D1222695217B00AB000DEFEB /* LaunchScreen.storyboard */,
 				D1222698217B00AB000DEFEB /* Info.plist */,
 			);
-			path = shenma;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D122269B217B00AB000DEFEB /* Build configuration list for PBXNativeTarget "shenma" */;
 			buildPhases = (
+				E9F87530333172C27C67ACB4 /* [CP] Check Pods Manifest.lock */,
 				D1222685217B00A9000DEFEB /* Sources */,
 				D1222686217B00A9000DEFEB /* Frameworks */,
 				D1222687217B00A9000DEFEB /* Resources */,
+				362F6A0C7177AA0A71A7E6F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +233,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		362F6A0C7177AA0A71A7E6F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shenma/Pods-shenma-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNotificationCenter/SwiftNotificationCenter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotificationCenter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shenma/Pods-shenma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F87530333172C27C67ACB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shenma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1222685217B00A9000DEFEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D122268F217B00AA000DEFEB /* ViewController.swift in Sources */,
 				D122268D217B00AA000DEFEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +451,12 @@
 		};
 		D122269C217B00AB000DEFEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8FC12816CB2D4396386EB0 /* Pods-shenma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5595TG2SSG;
-				INFOPLIST_FILE = shenma/Info.plist;
+				INFOPLIST_FILE = shenma/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +470,12 @@
 		};
 		D122269D217B00AB000DEFEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915B506CF8328FA2A1BC5BBC /* Pods-shenma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5595TG2SSG;
-				INFOPLIST_FILE = shenma/Info.plist;
+				INFOPLIST_FILE = shenma/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
